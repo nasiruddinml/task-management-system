@@ -4,6 +4,10 @@
   background: var(--color-white);
   margin: 0 0 2.5rem;
   overflow: auto;
-  padding: 1.5rem 1.5rem 2.5rem;
+  padding: 1.5rem 1.5rem 1.5rem;
   width: 100%;
+  @media all and (max-width: 480px) and (min-width: 320px) {
+    padding: 1rem;
+    margin: 0 0;
+  }
 }

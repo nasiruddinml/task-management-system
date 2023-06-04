@@ -6,13 +6,19 @@ import styles from './Table.module.css';
 
 export function Table<T>({ data, columns }: TableProps<T>): JSX.Element {
   return (
-    <table className={styles.Table}>
-      <thead className={styles.TableHead}>
-        <TableHeader columns={columns} />
-      </thead>
-      <tbody>
-        <TableRow data={data} columns={columns} />
-      </tbody>
-    </table>
+    <div className={styles.TableWrapper}>
+      {data && data.length ? (
+        <table className={styles.Table}>
+          <thead className={styles.TableHead}>
+            <TableHeader columns={columns} />
+          </thead>
+          <tbody>
+            <TableRow data={data} columns={columns} />
+          </tbody>
+        </table>
+      ) : (
+        <p>No todo list! Hooray!!</p>
+      )}
+    </div>
   );
 }

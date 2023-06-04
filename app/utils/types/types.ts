@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 export interface IColumnType<T> {
   key: string;
   title: string;
@@ -27,14 +25,24 @@ export interface TableRowProps<T> {
 }
 
 export interface IData {
+  id: string;
   title: string;
   time: number;
-  action?: ReactNode;
+  action?: any;
 }
 
-export interface IColumnType<T> {
-  key: string;
+export interface CommonState {
+  loading: boolean;
+}
+
+export interface TaskI {
   title: string;
-  width?: number;
-  render?: (column: IColumnType<T>, item: T) => void;
+  time: number;
+  action?: any;
+}
+
+export interface TaskState {
+  taskList: IData[];
+  totalHours: number;
+  totalMD: number;
 }
