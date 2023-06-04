@@ -1,0 +1,7 @@
+.TableHeaderCell {
+  border-bottom: 1px solid var(--color-primary-300);
+  font-size: 1rem;
+  text-align: left;
+  white-space: nowrap;
+  padding: 1.5rem 1rem;
+}

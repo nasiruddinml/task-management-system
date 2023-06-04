@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component test renders button unchanged 1`] = `
+<div>
+  <button
+    class="button undefined"
+  >
+    I am a button
+  </button>
+</div>
+`;

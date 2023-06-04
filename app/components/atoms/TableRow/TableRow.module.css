@@ -1,0 +1,6 @@
+.TableRowItem {
+  cursor: pointer;
+}
+.TableRowItem:hover {
+  background: var(--color-primary-200);
+}
