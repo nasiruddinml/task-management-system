@@ -42,8 +42,10 @@ const TaskForm = () => {
     e.preventDefault();
     const { isValid } = validateForm({ form, errors, forceTouchErrors: true });
     if (!isValid) {
-      setErrorMessage(errors.title.message + '<br />' + errors.time.message);
-      toggle();
+      if (errors.title.message || errors.time.message) {
+        setErrorMessage(errors.title.message + '<br />' + errors.time.message);
+        toggle();
+      }
       return;
     }
     dispatch(taskSlice.actions.addTaskList(form));

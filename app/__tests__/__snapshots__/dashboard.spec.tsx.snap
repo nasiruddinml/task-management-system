@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard renders dashboard unchanged 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <h2
+      class="title"
+    >
+      Task Management App
+    </h2>
+    <div
+      class="OverviewSection"
+    >
+      <div
+        class="Card"
+      >
+        <p
+          class="CardTitle"
+        >
+          Total Tasks
+        </p>
+        <span
+          class="CardNumber"
+        >
+          0
+        </span>
+      </div>
+      <div
+        class="Card"
+      >
+        <p
+          class="CardTitle"
+        >
+          Total Days
+        </p>
+        <span
+          class="CardNumber"
+        >
+          0
+        </span>
+      </div>
+      <div
+        class="Card"
+      >
+        <p
+          class="CardTitle"
+        >
+          Total Hours
+        </p>
+        <span
+          class="CardNumber"
+        >
+          0
+        </span>
+      </div>
+    </div>
+  </header>
+  <div
+    class="content"
+  >
+    <form
+      class="form"
+    >
+      <div
+        class="formGroup"
+      >
+        <label
+          class="formLabel"
+        >
+          Task Title
+        </label>
+        <input
+          aria-label="Title field"
+          class="formField"
+          name="title"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="formGroup hell"
+      >
+        <label
+          class="formLabel"
+        >
+          Time Required (In Hrs)
+        </label>
+        <input
+          aria-label="time field"
+          class="formField"
+          name="time"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div
+        class="formActions"
+      >
+        <button
+          class="button formSubmitBtn"
+          type="submit"
+        >
+          Add
+        </button>
+      </div>
+    </form>
+    <div
+      class="Card"
+    >
+      <h3>
+        Todo list
+      </h3>
+      <div
+        class="TableWrapper"
+      >
+        <p>
+          No todo list! Hooray!!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

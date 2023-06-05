@@ -4,9 +4,10 @@ import { IColumnType, IData } from '@app/utils/types/types';
 import Button from '@app/components/atoms/Button/Button';
 import Card from '@app/components/atoms/Card/Card';
 import { Table } from '@app/components/molecules/Table/Table';
+import OverviewSection from '@app/components/organisms/Overview/Overview';
+import TaskForm from '@app/components/organisms/TaskForm/TaskForm';
 import { useAppDispatch, useAppSelector } from '@app/redux/hooks';
 import { taskSlice } from '@app/redux/slices/task';
-import useModal from '@app/utils/hooks/useModal';
 
 export default function Page() {
   const data = useAppSelector((state: any) => state.task.taskList);
@@ -44,9 +45,18 @@ export default function Page() {
   ];
 
   return (
-    <Card>
-      <h3>Todo list</h3>
-      <Table data={data} columns={columns} />
-    </Card>
+    <>
+      <header className="header">
+        <h2 className="title">Task Management App</h2>
+        <OverviewSection />
+      </header>
+      <div className="content">
+        <TaskForm />
+        <Card>
+          <h3>Todo list</h3>
+          <Table data={data} columns={columns} />
+        </Card>
+      </div>
+    </>
   );
 }
